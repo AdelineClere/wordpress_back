@@ -1,0 +1,41 @@
+/*
+
+Theme Name: Basic Child
+Author: AdeuxL
+Version: 1.0
+Text Domain: basicchild
+Domain Path: /languages
+Description: Mon super thème enfant de Bootstrap Basic 4
+Template: bootstrap-basic4
+
+*/
+
+.monfooter {
+    background: black;
+    color: white;
+    padding: 15px 0;
+}
+
+.img_parallax {
+    background-attachment: fixed !important;    /*⚠️ !imp. > prend cette class pas celle de B */
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+
+/*
+.menufooter {
+    background: lightgrey;
+    padding: 5px;
+}
+
+.nav-pills {
+    width: 100%;
+}
+
+.nav-pills li {
+    display: inline-block;
+    min-width: 150px;
+    background: lightgrey;
+}
+*/

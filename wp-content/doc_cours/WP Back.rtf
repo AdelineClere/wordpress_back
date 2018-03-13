@@ -1,0 +1,399 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fnil\fcharset0 DIN-Regular;\f1\fnil\fcharset0 AppleColorEmoji;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red9\green80\blue208;\red32\green0\blue99;
+\red221\green32\blue103;\red32\green0\blue99;\red212\green214\blue154;\red23\green23\blue23;\red202\green202\blue202;
+\red194\green126\blue101;\red70\green137\blue204;\red183\green111\blue179;\red140\green211\blue254;\red109\green109\blue109;
+\red134\green19\blue62;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;\cssrgb\c0\c41176\c85098;\csgenericrgb\c12549\c0\c38824;
+\csgenericrgb\c86667\c12549\c40392;\csgenericrgb\c12549\c0\c38824;\cssrgb\c86275\c86275\c66667;\cssrgb\c11765\c11765\c11765;\cssrgb\c83137\c83137\c83137;
+\cssrgb\c80784\c56863\c47059;\cssrgb\c33725\c61176\c83922;\cssrgb\c77255\c52549\c75294;\cssrgb\c61176\c86275\c99608;\cssrgb\c50196\c50196\c50196;
+\csgenericrgb\c52549\c7451\c24314;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww20020\viewh26840\viewkind0
+\deftab720
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \expnd0\expndtw0\kerning0
+Venir se connecter : localhost + nom du site (nom dossier racine) + wp-admin\
+{\field{\*\fldinst{HYPERLINK "http://localhost/wordpress_back/wp-admin/"}}{\fldrslt \cf3 \ul \ulc3 http://localhost/wordpress_back/wp-admin/}}\
+Id : admin	/ mdp	: admin\
+\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f1 \cf0 \uc0\u9888 \u65039 
+\f0  Hi\'e9rarchie WP	:	{\field{\*\fldinst{HYPERLINK "https://wphierarchy.com/"}}{\fldrslt \cf3 \ul \ulc3 https://wphierarchy.com/}}\
+ \
+ \
+
+\b - T\'e9l\'e9charger wp 
+\b0 4.9.4 ds localhost, renommer le dossier par notre nom de sujet\
+
+\b - Cr\'e9er new BDD
+\b0   (vide) avec nom du sujet (importer fichier.sql si d\'e9j\'e0 cr\'e9e sur autre ordi)\
+- installer et se connecter \'e0 mon wp-admin : {\field{\*\fldinst{HYPERLINK "http://localhost/WP/wordpress_back/wp-admin/"}}{\fldrslt \cf3 \ul \ulc3 http://localhost/WP/wordpress_back/wp-admin/}}\
+	>  nom bdd / root / 
+\b effacer champ mdp ('root' sur Mac ?)
+\b0  / prefixe : changer le \'91wp'   > Installer\
+	>  Connexion Site de dev : 
+\b admin
+\b0  / 
+\b admin
+\b0  (car en local)\
+- installer th\'e8me choisi + dans wp-content / th\'e8me / cr\'e9er son child\
+\
+
+\b\fs48 \cf4 Back-office
+\b0\fs32 \cf0 \
+- 
+\b Apparence
+\b0  : choisir ou charger th\'e8me (se rajoute ds wp-content)\
+- 
+\b R\'e9glages
+\b0  > Lecture :\
+      > pg d'accueil = Accueil\
+      > pg des articles = blog -> pas besoin de contenu car elle sert just \'e0 faire le lien ac pg articles\
+- 
+\b Apparence / Menu
+\b0  > Menu sup\'e9rieur\
+- 
+\b Extensions
+\b0  (se rajoutent ds wp-content)\
+   	> 	'
+\b SF Admin bar tools
+\b0 ' > ajoute \'e0 la barre d'admin des ptis outils dev.  (montre les templates appel\'e9s pour charger pg..)\
+   	> 	
+\b ACF
+\b0  (Advanced Custom- Fields) permet de rajouter des champs personnalis\'e9s aux type de posts de wp \
+		(qui ne nous limite pas juste aux titres et contenus)\
+   	>
+\b  	Contact form 7
+\b0 \
+   	> 	
+\b Easy fancy box
+\b0  => popup du media cliqu\'e9 (poss. modif. r\'e9glages. L\'e9gende se met en dessous s'il y en a une..\
+   	> 	easy language switcher (petit drapeau sur site pour changer langue) \
+		(wpml : wp multilanguage, Polylang (+ aller ds Menu, cocher Liste des lang.))\
+   	> 	
+\b Custom post type ui 
+\b0 : cr\'e9er nv type de contenu\
+	> \'a0	
+\b wp google map
+\b0  (gratuit si on ajoute qu'un) > cr\'e9er cl\'e9 API\
+		> copier shortcode de\'a0Cartes / My first map > le coller dans Page / Contact (l\'e0 o\'f9 on a coll\'e9 formulaire\
+ \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+\cf0 Rq. : retrouver toutes nos cl\'e9s API :\'a0{\field{\*\fldinst{HYPERLINK "http://console.developers.google.com/apis/"}}{\fldrslt \cf3 \ul \ulc3 console.developers.google.com/apis/}}\
+Pour recaptcha\'a0:\'a0{\field{\*\fldinst{HYPERLINK "http://developers.google.com/recaptcha/"}}{\fldrslt \cf3 \ul \ulc3 developers.google.com/recaptcha/}} .\
+\
+\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\b\fs48 \cf4 Cr\'e9er nv dossier ds wp-content / themes -> .....child
+\fs32 \cf0 \
+
+\fs48 \cf4 Editeur text, cr\'e9er :
+\b0\fs32 \cf0 \
+- 
+\b style.css
+\b0  (ac infos en comm.)\
+- 
+\b functions.php
+\b0 \
+- 
+\b dossier language
+\b0 \
+- prendre 1 img, la nommer '
+\b screenshot.jpg
+\b0 "\
+- 
+\b footer.php
+\b0   ( ac <?php wp_content (-> 'aff. barre d'admin noire en haut) ) ==> sera pris en priorite plut\'f4t que celui du th\'e8me enfant\
+- 
+\b front-page.php
+\b0 \
+\
+\
+
+\b Accueil = pg sp\'e9ciale
+\b0  > 	wp regarde s'il y a une pg d\'e9finie sp\'e9cialement :\
+
+\b \'95 front-page.php
+\b0   \
+	> 	wp va donc prendre celle-ci maintenant = pg sp\'e9cifique, et plus la pg accueil de parent \
+		('front-page' = s'attend \'e0 une pg d'accueil)\
+	> 	r\'e9cup\'e9rer contenu de cette pg (de pg Accueil d'origine) :\
+Rq : wp utilise tjrs boucle while (= la loop)\
+	>	
+\b Zoning sur front-page.php
+\b0  > cr\'e9er fichiers des zones (zone1.php ...)\
+   		> sur front-page.php > 
+\b appeler ces fichiers de zones
+\b0  \cf5 ( get_template_part('content','zone1'); )\cf0 \
+\
+\'95 ACF / 
+\b Ajouter
+\b0  
+\b Groupe de champs
+\b0  <> zoning : \
+  	>	' Zones de la page d'accueil ' > 
+\b Montrer ce champ quand
+\b0   'Type de pg' 
+\b =
+\b0  est \'e9gal \'e0 = 'Page d'accueil'\
+    	>	ACF > 
+\b ajouter zone suivante
+\b0 , ex. : texte (-> editeur WYSIWYG = what you see is what you get \
+		(permet d'avoir barre ic\'f4nes de modif text dans Pages) \
+	>	ajout img m\'eames tailles ds media\
+
+\b 	
+\b0 > 	
+\b Charger \'e9lts (images, textes etc.) ds les zones cr\'e9\'e9es avec ACF, dans les pg
+\b0 \
+	> 	Afficher les zones de la pg :\
+		- 
+\b content-zone1.php
+\b0  > on appelle les img mises ds les zones 1, 2 3.... etc\
+		- 
+\b content-zone2.php
+\b0 \
+ \
+
+\b \'95 Contact
+\b0  : \
+	>	Formulaire de contact\
+	>	
+\b copier Code court
+\b0  > le 
+\b coller
+\b0  dans page 
+\b Contact
+\b0  => affiche le formulaire en front !\
+	>	ouvert aux spams !!! -> cr\'e9er un 
+\b reCAPTCHA
+\b0  : Contact / Int\'e9gration \
+		-> g\'e9n\'e9rer cl\'e9s API sur lien google donn\'e9 -> fourni 2 cl\'e9s : de site + secr\'e8te -> les rentrer\
+	>	retourner sur Contact / Formulaire... reCAPTCHA > 
+\b int\'e9grer
+\b0 \
+	>	Rq. si on veut retrouver champs rajout\'e9s ds Formulaire > les ajouter dans onglet Email\
+ \
+
+\b \'95 Choisir un nouveau type de contenu
+\b0  (comme Article, Medias, Pages...) \
+   Ex. : concert\
+	>	
+\b custom post type ui : CPT UI
+\b0  concert - Concert - Menu icon : choisir par ex. sur 
+\b wp dashicons
+\b0  -  \
+		'Has Archive' > mettre 'True' \
+	>	
+\b ACI
+\b0  > nv grp de champs > type de publi\'b0 = 'concert' > ajouter champs photos, date, lieu....\
+	>	! 
+\b Ajouter
+\b0  concert 
+\b au menu
+\b0  !\
+	>	faire 
+\b 2 fichiers php pour archive et single
+\b0 \
+  		( 
+\b Archive
+\b0  = Liste de posts (parfois que d\'e9but txt) / 
+\b Single
+\b0  = le contenu d'un post )\
+ \
+
+\f1 \uc0\u9888 \u65039 
+\f0  
+\b  
+\fs36 slug
+\b0\fs32  = permalien afficher sous titre page etc.. On peut le modif (mettre + court si titre long ...) -> on l'utilise pour cr\'e9er un template de cette pg la, car c'est le lien permanent, fixe d'une pg pr\'e9cise ( >cf. hierarchy : pour prendre cette pg nomm\'e9e\'85slug.php plut\'f4t que page.php parent\
+ \
+\
+
+\b\fs48 \cf6 FUNCTIONS
+\b0\fs32 \cf0 \
+Init wp\
+- charge th\'e8me ----> vont s'accrocher \'e0 un 'hook' pour ajouter notre fct\'b0 perso\
+\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\fs36 \cf0 - 
+\b charge css,\'a0script :
+\fs32 \
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\b0\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 add_action\cf9 \strokec9 (\cf10 \strokec10 'wp_enqueue-scripts'\cf9 \strokec9 ,\cf10 \strokec10 'custom_style_scripts'\cf9 \strokec9 );\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	\
+
+\f2\fs24 \cf11 \cb8 \outl0\strokewidth0 \strokec11 function\cf9 \strokec9  \cf7 \strokec7 custom_style_scripts\cf9 \strokec9 () \{\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 wp_enqueue_style\cf9 \strokec9 (\cf10 \strokec10 'parent-style'\cf9 \strokec9 , \cf7 \strokec7 get_template_directory_uri\cf9 \strokec9 () . \cf10 \strokec10 '/style.css'\cf9 \strokec9 );\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 wp_enqueue_style\cf9 \strokec9 (\cf10 \strokec10 'child-style'\cf9 \strokec9 , \cf7 \strokec7 get_stylesheet_directory_uri\cf9 \strokec9 () . \cf10 \strokec10 '/style.css'\cf9 \strokec9 );\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 wp_enqueue_script\cf9 \strokec9 (\cf10 \strokec10 'jquery-cdn'\cf9 \strokec9 , \cf10 \strokec10 'https://code.jquery.com/jquery-3.3.1.min.js'\cf9 \strokec9 );\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb8 \}\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 \
+
+\fs36 - 
+\b cr\'e9er une new nav
+\b0\fs32  (ex en footer) :\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf12 \cb8 \outl0\strokewidth0 \strokec12 if\cf9 \strokec9  ( \cf7 \strokec7 function_exists\cf9 \strokec9 (\cf10 \strokec10 'register_nav_menus'\cf9 \strokec9 ) )\{\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 register_nav_menus\cf9 \strokec9 ( \cf7 \strokec7 array\cf9 \strokec9 (\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf10 \cb8 \outl0\strokewidth0 \strokec10 'menufooter'\cf9 \strokec9  => \cf10 \strokec10 'Menu du bas'\cf9 \strokec9  )\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf9 \cb8 \outl0\strokewidth0 \strokec9 );\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb8 \}\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	> l'appeler ds footer.php :\
+\
+\pard\pardeftab720\sl360\partightenfactor0
+
+\f2\fs24 \cf13 \cb8 \outl0\strokewidth0 \strokec13 $items\cf9 \strokec9  = \cf7 \strokec7 wp_get_nav_menu_items\cf9 \strokec9 (\cf10 \strokec10 'Menu footer'\cf9 \strokec9 );\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf12 \cb8 \outl0\strokewidth0 \strokec12 foreach\cf9 \strokec9  ( \cf13 \strokec13 $items\cf9 \strokec9  as \cf13 \strokec13 $index\cf9 \strokec9  => \cf13 \strokec13 $item\cf9 \strokec9  ):\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 			
+\f2\fs24 \cf11 \cb8 \outl0\strokewidth0 \strokec11 ?>\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf14 \cb8 \outl0\strokewidth0 \strokec14 <\cf11 \strokec11 li\cf9 \strokec9  \cf13 \strokec13 class\cf9 \strokec9 =\cf10 \strokec10 "nav-item"\cf14 \strokec14 >\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 			
+\f2\fs24 \cf14 \cb8 \outl0\strokewidth0 \strokec14 <\cf11 \strokec11 a\cf9 \strokec9  \cf13 \strokec13 class\cf9 \strokec9 =\cf10 \strokec10 "nav-link"\cf9 \strokec9  \cf13 \strokec13 href\cf9 \strokec9 =\cf10 \strokec10 "\cf11 \strokec11 <?=\cf9 \strokec9  \cf13 \strokec13 $item\cf9 \strokec9 ->\cf13 \strokec13 url\cf9 \strokec9  \cf11 \strokec11 ?>\cf10 \strokec10 "\cf14 \strokec14 >\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 			
+\f2\fs24 \cf11 \cb8 \outl0\strokewidth0 \strokec11 <?=\cf9 \strokec9  \cf13 \strokec13 $item\cf9 \strokec9 ->\cf13 \strokec13 title\cf9 \strokec9 ; \cf11 \strokec11 ?>\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 			
+\f2\fs24 \cf14 \cb8 \outl0\strokewidth0 \strokec14 </\cf11 \strokec11 a\cf14 \strokec14 >\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf14 \cb8 \outl0\strokewidth0 \strokec14 </\cf11 \strokec11 li\cf14 \strokec14 >\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf11 \cb8 \outl0\strokewidth0 \strokec11 <?php\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf12 \cb8 \outl0\strokewidth0 \strokec12 endforeach\cf9 \strokec9 ;\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	> + Apparence / Menu / cr\'e9er nv -> on voit ds r\'e9glages en bas 'Menu du bas' (le cocher ) qu'on vient de cr\'e9er ds functions.php\
+\'a0\
+- 
+\b cr\'e9er new zone widget
+\b0\fs36 \
+
+\fs32 	>\'a0cr\'e9er un nv template de new zone\
+	> cr\'e9er zone widget perso : 
+\f2\fs24 \cf9 \outl0\strokewidth0 \strokec9 \
+	
+\f0\fs32 \cf0 \outl0\strokewidth0 > aller choisir widgets ds Apparence / W\'85\
+\
+\'a0
+\f2\fs24 \cf12 \cb8 \outl0\strokewidth0 \strokec12 if\cf9 \strokec9  ( \cf7 \strokec7 function_exists\cf9 \strokec9 (\cf10 \strokec10 'register_sidebar'\cf9 \strokec9 ) )\{\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 register_sidebar\cf9 \strokec9 ( \cf7 \strokec7 array\cf9 \strokec9 (\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf10 \cb8 \outl0\strokewidth0 \strokec10 'name'\cf9 \strokec9  => \cf10 \strokec10 'Ma zone \'e0 widgets perso'\cf9 \strokec9 ,\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf10 \cb8 \outl0\strokewidth0 \strokec10 'id'\cf9 \strokec9  => \cf10 \strokec10 'sidebar-perso'\cf9 \strokec9 ,\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf10 \cb8 \outl0\strokewidth0 \strokec10 'before_widget'\cf9 \strokec9  => \cf10 \strokec10 '<div>'\cf9 \strokec9 ,\cb1 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 		
+\f2\fs24 \cf10 \cb8 \outl0\strokewidth0 \strokec10 'after_widget'\cf9 \strokec9  => \cf10 \strokec10 '</div>'\cf9 \cb1 \strokec9 \
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf9 \cb8 \outl0\strokewidth0 \strokec9 ));\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf9 \cb8 \}\cb1 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	> l'appeler dans content-zoneX :\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+\cf0 \'a0
+\f2\fs24 \cf11 \cb8 \outl0\strokewidth0 \strokec11 <?php\cf9 \cb1 \strokec9 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 	
+\f2\fs24 \cf7 \cb8 \outl0\strokewidth0 \strokec7 dynamic_sidebar\cf9 \strokec9 (\cf10 \strokec10 'sidebar-perso'\cf9 \strokec9 );\cb1 \
+\pard\pardeftab720\sl360\partightenfactor0
+\cf11 \cb8 \strokec11 ?>\cf9 \cb1 \strokec9 \
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\f0\fs32 \cf0 \outl0\strokewidth0 \
+\'a0\
+\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\b\fs48 \cf15 R\'e9install. Mac\'a0home :
+\b0\fs32 \cf0 \
+PC :\
+Exporter BDD .sql\
+localhost / wordpress_back > wp-content > prendre 'uploads' + 'plugins'\
+localhost / wordpress_back > wp-content > themes > prendre 'basicchild'\
+ou\
+Essayer exporter depuis admin wp\
+\'a0\
+Venir se connecter : localhost + nom du site (nom dossier racine) + wp-admin\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "http://localhost/wordpress_back/wp-admin/"}}{\fldrslt \cf3 \ul \ulc3 http://localhost/wordpress_back/wp-admin/}}\
+\'a0\
+\'a0\
+\pard\pardeftab720\sl336\slmult1\partightenfactor0
+
+\b \cf0 ACF
+\b0  : pour pas avoir \'e0 refaire fichiers :\
+- PC : ACF / exporter / fichier en xml\
+- Mac : dans Outils wp > installer outil pour exporter (en bas) > lancer l'importation\
+\'a0\
+- PC : Exporter tout mon site depuis Outil\
+\'a0 +/ou prendre wp-content / ...child / plugins / uploads\
+ \
+ \
+ \
+ \
+ \
+ \
+ \
+ \
+ \
+ \
+\
+}

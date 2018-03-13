@@ -1,0 +1,20 @@
+Shortcode simple
+
+[nom_shortcode nonchamp1="valeur1" nomchamp2="valeur2"]
+params : nomchamp1, nomchamp2
+
+Shortcode avancé
+
+[nom_shortcode nonchamp="valeur"] Contenu_ici [/nom_shortcode]
+params : nomchamp1content : Contenu_ici
+
+ex : [youtube]0g9poWKKpbU[/youtube]
+
+<div class="embed-responsive embed-responsive-16by9">
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/0g9poWKKpbU"></iframe>
+</div>
+
+
+Marche aussi :
+
+echo do_shortcode('[youtube]' . $var . '[/youtube]');
